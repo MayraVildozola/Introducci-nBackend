@@ -1,0 +1,22 @@
+{
+  "name": "index.js",
+  "version": "1.0.0",
+  "description": "Primer uso del modulo ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MayraVildozola/Introducci-nBackend.git"
+  },
+  "keywords": [
+    "HTTP"
+  ],
+  "author": "MAYRA GISELA VILDOZOLA SIGALA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MayraVildozola/Introducci-nBackend/issues"
+  },
+  "homepage": "https://github.com/MayraVildozola/Introducci-nBackend#readme"
+}
