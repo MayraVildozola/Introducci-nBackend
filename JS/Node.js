@@ -12,6 +12,10 @@ http.createServer(function (request, response){
     var contentType = 'text/html';
     var mineTypes = {
         'http': 'text/html',
-        
-    }
+        'JS': 'text/javascript',
+        'CSS': 'text/CSS',
+        'json': 'aplication/json',
+        'jpg': 'image/jpg',
+    };
+    
 }
