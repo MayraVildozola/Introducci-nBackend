@@ -34,3 +34,13 @@ app.post(`/users`, (request, response) => {
         response.status(201).send(`User added with ID: ${result.insertId}`);
     });
 }):
+//Actualizar un usuario exixtente
+app.put(`/users/:id`, (request, response) =>{
+    const id = request.params.id;
+
+    pool.quary(`UPDATE users SET ? WHERE id = ?`, [request.body, id],(error, result) =>{
+        if (error) throw error;
+
+        response.send(`User updated successfully.`);
+    });
+});
