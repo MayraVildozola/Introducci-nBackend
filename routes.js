@@ -44,3 +44,14 @@ app.put(`/users/:id`, (request, response) =>{
         response.send(`User updated successfully.`);
     });
 });
+//Eliminar un usuario
+app.delete(`/users/:id`, (request, response) => {
+    const id = request.params. id;
+    pool.querty(`DELETE FROM users WHERE id = ?`, id, (error, result) => {
+        if (error) throw error;
+        response.send(`User deleted.`);
+    });
+});
+}
+//Exportar el router
+module.exports = router;
